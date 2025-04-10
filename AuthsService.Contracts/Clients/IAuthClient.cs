@@ -13,6 +13,6 @@ public interface IAuthClient
     /// <param name="request"></param>
     /// <param name="ct"></param>
     /// <returns></returns>
-    [Post("/Auths")]
+    [Post("/Auths/Auth")]
     public Task<BaseResponse<AuthResponse>> GetTokenAsync(GetTokenRequest request, CancellationToken ct);
 }

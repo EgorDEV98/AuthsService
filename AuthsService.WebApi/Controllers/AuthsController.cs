@@ -25,7 +25,7 @@ public class AuthsController : ControllerBase, IAuthClient
     /// <param name="request"></param>
     /// <param name="ct"></param>
     /// <returns></returns>
-    [HttpPost("auth")]
+    [HttpPost("Auth")]
     public async Task<BaseResponse<AuthResponse>> GetTokenAsync(GetTokenRequest request, CancellationToken ct)
     {
         var result = await _authsService.GetJwtTokenAsync(new AuthParams()
